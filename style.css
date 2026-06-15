@@ -1,0 +1,99 @@
+/*main brand identities: Cream, Navy, Dark Forest Green*/
+:root {
+  --brand-white: #ffffff;
+  --brand-cream: #fbf9f4;
+  --brand-navy: #0a192f;
+  --brand-forest: #13331c;
+  --brand-forest-hover: #1b4928;
+}
+
+/* Body Configurations */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--brand-white);
+  color: var(--brand-navy);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/*nav bar colours cream, navy, dark forest green*/
+.navbar {
+  background-color: var(--brand-cream) !important;
+  border-bottom: 2px solid rgba(19, 51, 28, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--brand-navy) !important;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--brand-navy) !important;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect to Dark Forest Green */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--brand-forest) !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary {
+  color: var(--brand-forest) !important;
+  border-color: var(--brand-forest) !important;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  color: var(--brand-cream) !important;
+  background-color: var(--brand-forest) !important;
+  border-color: var(--brand-forest) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(14%) sepia(21%) saturate(1431%) hue-rotate(84deg)
+    brightness(92%) contrast(92%);
+}
+
+/* Footer Configurations */
+footer {
+  background-color: var(--brand-forest) !important;
+  color: var(--brand-cream) !important;
+}
+
+footer h5 {
+  color: var(--brand-white);
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  border-left: 3px solid var(--brand-cream);
+  padding-left: 10px;
+}
+
+/* Footer Text Configurations */
+.text-muted-custom {
+  color: rgba(251, 249, 244, 0.75) !important;
+  line-height: 1.6;
+}
+
+/* Footer Link Configurations */
+.footer-links a {
+  color: rgba(251, 249, 244, 0.8) !important;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--brand-white) !important;
+  padding-left: 5px; /* Subtle dynamic shift on hover */
+  text-decoration: underline !important;
+}
+
+/* Footer Horizontal Break Separator */
+.border-secondary-custom {
+  border-color: rgba(251, 249, 244, 0.15) !important;
+}
