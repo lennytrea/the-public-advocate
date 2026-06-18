@@ -89,11 +89,62 @@ footer h5 {
 
 .footer-links a:hover {
   color: var(--brand-white) !important;
-  padding-left: 5px; /* Subtle dynamic shift on hover */
+  padding-left: 5px; /* subtle dynamic shift on hover */
   text-decoration: underline !important;
 }
 
 /* Footer Horizontal Break Separator */
 .border-secondary-custom {
   border-color: rgba(251, 249, 244, 0.15) !important;
+}
+/*controles the size of the carousel images*/
+.carousel-hero-img {
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+/*aplies tint to images*/
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(10, 25, 47, 0.85) 30%,
+    rgba(19, 51, 28, 0.4) 100%
+  );
+  z-index: 1;
+}
+/*makes sure text sits ontop of images */
+.carousel-caption {
+  z-index: 2;
+}
+/*GORGIA gont is voted most legal looking */
+.font-serif {
+  font-family: "Georgia", serif;
+}
+/*max width for paragraphs on carousells */
+.max-width-600 {
+  max-width: 600px;
+}
+/*Forces the text color into white-cream color*/
+.text-light-custom {
+  color: rgba(251, 249, 244, 0.9) !important;
+}
+/*buttons to be dark green*/
+.btn-primary-custom {
+  background-color: var(--brand-forest) !important;
+  border-color: var(--brand-forest) !important;
+  color: var(--brand-cream) !important;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+/*hover function for buttons*/
+.btn-primary-custom:hover {
+  background-color: var(--brand-forest-hover) !important;
+  border-color: var(--brand-forest-hover) !important;
+  transform: translateY(-2px);
 }
