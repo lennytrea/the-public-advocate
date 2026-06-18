@@ -148,3 +148,11 @@ footer h5 {
   border-color: var(--brand-forest-hover) !important;
   transform: translateY(-2px);
 }
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+}
