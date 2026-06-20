@@ -8,7 +8,7 @@ A high-performance, fully responsive multi-page web platform built for a commerc
 
 This web application serves as a digital headquarters for a modern law firm, providing prospective shareholders with access to legal resources, advocate profiles, and consultation intake channels.
 
-- **Live Deployment:** (soon)\*
+- **Live Deployment:---> (https://lennytrea.github.io/the-public-advocate/)
 - **Target Environment:** Desktop.
 
 ## Technology Stack & Standards
