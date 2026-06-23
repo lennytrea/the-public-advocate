@@ -1,34 +1,62 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Grab all buttons and all 11 individual card wrappers
-  const filterButtons = document.querySelectorAll(".filter-btn");
+  const roleButtons = document.querySelectorAll(".filter-role-btn");
+  const fieldButtons = document.querySelectorAll(".filter-field-btn");
   const teamCards = document.querySelectorAll(".team-item");
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      // 1. Clear active button styling across the bar
-      filterButtons.forEach((btn) => {
-        btn.classList.remove("btn-success", "active");
-        btn.classList.add("btn-outline-dark");
-      });
+  // Track the current active filter values
+  let activeRole = "all";
+  let activeField = "all";
 
-      // 2. Apply focus state to the clicked button
+  // 1. HANDLE SENIORITY LEVEL BUTTON CLICKS
+  roleButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      roleButtons.forEach((btn) =>
+        btn.classList.remove("btn-success", "active"),
+      );
+      roleButtons.forEach((btn) => btn.classList.add("btn-outline-dark"));
+
       this.classList.remove("btn-outline-dark");
       this.classList.add("btn-success", "active");
 
-      // 3. Extract filter target keyword
-      const targetFilter = this.getAttribute("data-filter");
-
-      // 4. Evaluate card wrapper against keyword
-      teamCards.forEach((card) => {
-        const cardRole = card.getAttribute("data-role");
-
-        // Show the element if 'all' is active, or if the role token matches perfectly
-        if (targetFilter === "all" || cardRole === targetFilter) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
+      activeRole = this.getAttribute("data-filter-role");
+      applyDualFilter();
     });
   });
+
+  // 2. HANDLE PRACTICE FIELD BUTTON CLICKS
+  fieldButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      fieldButtons.forEach((btn) =>
+        btn.classList.remove("btn-success", "active"),
+      );
+      fieldButtons.forEach((btn) => btn.classList.add("btn-outline-dark"));
+
+      this.classList.remove("btn-outline-dark");
+      this.classList.add("btn-success", "active");
+
+      activeField = this.getAttribute("data-filter-field");
+      applyDualFilter();
+    });
+  });
+
+  // 3. THE function that applies both filters to the team cards
+  function applyDualFilter() {
+    teamCards.forEach((card) => {
+      const cardRole = card.getAttribute("data-role");
+      const cardField = card.getAttribute("data-field");
+
+      // Condition A: card match the selected role row?
+      const matchRole = activeRole === "all" || cardRole === activeRole;
+
+      // Condition B: card match the selected practice field row?
+      const matchField = activeField === "all" || cardField === activeField;
+
+      // If BOTH, display the card. Otherwise, hide it.
+      if (matchRole && matchField) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
 });

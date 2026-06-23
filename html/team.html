@@ -122,6 +122,401 @@
           </div>
         </div>
       </section>
+      <section class="py-4 bg-light border-top border-bottom">
+        <div class="container">
+          <!-- Row 1: Seniority Tier Filters -->
+          <div class="mb-3">
+            <h6
+              class="text-uppercase text-secondary fw-bold small text-center mb-2"
+            >
+              Filter By Seniority
+            </h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <button
+                class="btn btn-success btn-sm filter-role-btn active"
+                data-filter-role="all"
+              >
+                All Levels
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-role-btn"
+                data-filter-role="partner"
+              >
+                Partners
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-role-btn"
+                data-filter-role="senior"
+              >
+                Senior Associates
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-role-btn"
+                data-filter-role="associate"
+              >
+                Associates
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-role-btn"
+                data-filter-role="pupil"
+              >
+                Legal Pupils
+              </button>
+            </div>
+          </div>
+
+          <!-- Row 2: Practice Field Filters -->
+          <div>
+            <h6
+              class="text-uppercase text-secondary fw-bold small text-center mb-2"
+            >
+              Filter By Practice Area
+            </h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <button
+                class="btn btn-success btn-sm filter-field-btn active"
+                data-filter-field="all"
+              >
+                All Fields
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-field-btn"
+                data-filter-field="corporate"
+              >
+                Corporate Governance
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-field-btn"
+                data-filter-field="fintech"
+              >
+                FinTech Law
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-field-btn"
+                data-filter-field="infrastructure"
+              >
+                Infrastructure
+              </button>
+              <button
+                class="btn btn-outline-dark btn-sm filter-field-btn"
+                data-filter-field="general"
+              >
+                General Practice
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--FULL DIRECTORY GRID -->
+      <section class="py-5 bg-white">
+        <div class="container my-4">
+          <div class="text-center mb-5">
+            <h2 class="font-serif fw-bold text-dark display-6">
+              Our Legal Counsel
+            </h2>
+            <p>Meet the team</p>
+            <div
+              class="mx-auto bg-success mt-2"
+              style="width: 50px; height: 3px"
+            ></div>
+          </div>
+
+          <!-- Master Layout Row Containing All 11 Cards Linked to our Script Engine -->
+          <div class="row g-4 justify-content-center" id="team-grid">
+            <!-- Card 1: Felix Choge (Partner + Corporate) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="partner"
+              data-field="corporate"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Managing Partner</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Felix Choge
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Corporate Strategy &amp; Infrastructure Disputes
+                  </p>
+                  <p class="text-secondary small mb-4">
+                    With over two decades of executive cross-border advisory
+                    experience, Felix leads the firm's primary divisions.
+                  </p>
+                  <a
+                    href="mailto:f.choge@chogeadvocates.com"
+                    class="btn btn-sm btn-outline-success px-3"
+                    >Contact Partner</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Partner (Partner + Infrastructure) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="partner"
+              data-field="infrastructure"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Senior Partner</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    John Mwangi
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Public-Private Partnerships
+                  </p>
+                  <p class="text-secondary small mb-4">
+                    Engineers mega-scale project infrastructure concessions and
+                    regional capital utilities defense systems.
+                  </p>
+                  <a href="#" class="btn btn-sm btn-outline-success px-3"
+                    >Contact Partner</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Partner (Partner + General) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="partner"
+              data-field="general"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Senior Partner</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Grace Omwamba
+                  </h3>
+                  <p class="text-muted small mb-3">General Practice Counsel</p>
+                  <p class="text-secondary small mb-4">
+                    Manages full-scale corporate retainers, general commercial
+                    litigation, and regulatory affairs.
+                  </p>
+                  <a href="#" class="btn btn-sm btn-outline-success px-3"
+                    >Contact Partner</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Amara Kiprop (Senior Associate + FinTech) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="senior"
+              data-field="fintech"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Senior Associate</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Amara Kiprop
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    FinTech &amp; IP Protection
+                  </p>
+                  <p class="text-secondary small mb-0">
+                    Specializes in regional technological regulatory sandbox
+                    alignment and dynamic digital properties.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Senior Associate  (Senior Associate + Corporate) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="senior"
+              data-field="corporate"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Senior Associate</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Jane Karimi
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Corporate Governance Audit
+                  </p>
+                  <p class="text-secondary small mb-0">
+                    Oversees risk management matrix compilation and cross-border
+                    commercial compliance setups.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Silas Mwangi (Associate + General) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="associate"
+              data-field="general"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Associate</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Silas Mwangi
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Commercial Conveyancing &amp; General
+                  </p>
+                  <p class="text-secondary small mb-0">
+                    Handles complex asset real estate assignments, commercial
+                    transfers, and operational documentation lease controls.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: Elena Rostov (Associate + Corporate) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="associate"
+              data-field="corporate"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Associate</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Elena Rostov
+                  </h3>
+                  <p class="text-muted small mb-3">Regulatory Compliance</p>
+                  <p class="text-secondary small mb-0">
+                    Applies operational statutory mapping across institutional
+                    business mergers and capital compliance files.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: David Ochieng (Associate + Infrastructure) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="associate"
+              data-field="infrastructure"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Associate</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    David Ochieng
+                  </h3>
+                  <p class="text-muted small mb-3">Litigation &amp; Research</p>
+                  <p class="text-secondary small mb-0">
+                    Coordinates judicial infrastructure briefing assessments and
+                    high-impact trial advisory research lines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9: Associate  (Associate + FinTech) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="associate"
+              data-field="fintech"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Associate</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Amina Abdi
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    FinTech Licensing Protocols
+                  </p>
+                  <p class="text-secondary small mb-0">
+                    Structures operational data compliance, transactional policy
+                    checks, and processing security terms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10: Legal  (Pupil + FinTech) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="pupil"
+              data-field="fintech"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Legal Pupil</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Brian Kipronoh
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Emerging Technology Research
+                  </p>
+                  <p class="text-secondary small mb-0">
+                    Assists with tracking regulatory sandbox rule updates and
+                    digital banking framework files.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 11: Legal  (Pupil + Infrastructure) -->
+            <div
+              class="col-md-4 team-item"
+              data-role="pupil"
+              data-field="infrastructure"
+            >
+              <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-body p-4">
+                  <span
+                    class="text-success small fw-bold text-uppercase d-block mb-1"
+                    >Legal Pupil</span
+                  >
+                  <h3 class="h4 font-serif fw-bold text-dark mb-1">
+                    Cynthia Wambui
+                  </h3>
+                  <p class="text-muted small mb-3">
+                    Project Finance Assistance
+                  </p>
+                  <p class="text-secondary small mb-0">
+                    Supports physical planning regulatory reviews, deed registry
+                    tracking, and structural document parsing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="text-light pt-5 pb-3 mt-auto">
@@ -231,5 +626,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/search.js"></script>
   </body>
 </html>
