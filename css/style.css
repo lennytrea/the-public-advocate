@@ -186,3 +186,12 @@ footer h5 {
 .accordion-button::after {
   transition: transform 0.2s ease-in-out;
 }
+/* Dim the trigger link when hovering over the group */
+.dim-group:hover .db-trigger-link {
+  opacity: 0.4;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.dim-group .db-trigger-link:hover {
+  opacity: 1 !important;
+}
