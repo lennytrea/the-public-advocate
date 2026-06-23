@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container">
         <a
@@ -37,9 +38,7 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -54,7 +53,9 @@
               <a class="nav-link" href="blog.html">Legal Insights</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cases.html">Notable Matters</a>
+              <a class="nav-link active" aria-current="page" href="cases.html"
+                >Notable Matters</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="careers.html">Careers</a>
@@ -71,6 +72,7 @@
       </div>
     </nav>
 
+    <!-- METRICS & CHART SECTION -->
     <section class="container my-5">
       <div class="row g-4 align-items-center">
         <div class="col-lg-7">
@@ -148,43 +150,527 @@
       </div>
     </section>
 
-    <footer class="text-light pt-5 pb-3 mt-auto">
+    <!-- CATEGORIZED CASE STUDIES SECTION -->
+    <section class="container my-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark">Practice Area Engagements</h2>
+        <p class="text-secondary max-w-xl mx-auto">
+          Explore selected records of our institutional advisory, transaction
+          structuring, and tribunal defenses.
+        </p>
+      </div>
+
+      <!-- Interactive Navigation Pills -->
+      <div class="d-flex justify-content-center mb-4">
+        <div
+          class="nav nav-pills p-1 bg-white border rounded shadow-sm"
+          id="mattersTabs"
+          role="tablist"
+        >
+          <button
+            class="nav-link active rounded-pill px-4"
+            id="ma-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#panel-ma"
+            type="button"
+            role="tab"
+            aria-controls="panel-ma"
+            aria-selected="true"
+          >
+            Corporate M&A & PE
+          </button>
+          <button
+            class="nav-link rounded-pill px-4"
+            id="infra-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#panel-infra"
+            type="button"
+            role="tab"
+            aria-controls="panel-infra"
+            aria-selected="false"
+          >
+            Infrastructure & Energy
+          </button>
+          <button
+            class="nav-link rounded-pill px-4"
+            id="banking-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#panel-banking"
+            type="button"
+            role="tab"
+            aria-controls="panel-banking"
+            aria-selected="false"
+          >
+            Banking & FinTech
+          </button>
+          <button
+            class="nav-link rounded-pill px-4"
+            id="dispute-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#panel-dispute"
+            type="button"
+            role="tab"
+            aria-controls="panel-dispute"
+            aria-selected="false"
+          >
+            Dispute Resolution
+          </button>
+        </div>
+      </div>
+
+      <!-- NDA Callout -->
+      <div
+        class="alert alert-warning border-0 bg-opacity-10 text-dark p-3 mb-5 rounded shadow-sm text-center mx-auto"
+        style="max-width: 800px; font-size: 0.9rem"
+      >
+        🛡️ <strong>Confidentiality Notice:</strong> In compliance with
+        advocate-client privilege protocols and active non-disclosure covenants,
+        corporate identities have been structural-anonymized. Financial
+        allocations reflect exact executed matters.
+      </div>
+
+      <!-- Case Presentation Panels -->
+      <div class="tab-content" id="mattersTabsContent">
+        <!-- Tab 1: Corporate M&A & PE (4 Case Matters) -->
+        <div
+          class="tab-pane fade show active"
+          id="panel-ma"
+          role="tabpanel"
+          aria-labelledby="ma-tab"
+        >
+          <div class="row g-4">
+            <!-- Case 1 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Equity Restructuring in Logistics Sector
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$45M USD Deal Value</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Acted as lead regional counsel for a
+                  European private equity fund acquiring a majority stake in a
+                  prominent regional cold-chain logistics provider.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Structured the
+                  asset transfer, managed complex competition authority filings,
+                  and successfully mitigated historical tax liabilities
+                  discovered during due diligence.
+                </p>
+              </div>
+            </div>
+            <!-- Case 2 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Cross-Border FMCG Manufacturing Merger
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$62M USD Transaction</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Advised a leading regional
+                  Fast-Moving Consumer Goods (FMCG) brand on its strategic
+                  consolidation and merger with a Tanzanian manufacturing
+                  competitor.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Successfully
+                  navigated COMESA Competition Commission filings and structured
+                  multi-jurisdictional asset transfers without operational
+                  downtime.
+                </p>
+              </div>
+            </div>
+            <!-- Case 3 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Shareholder Buy-Out & Corporate Restructuring
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$15M USD Exit</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Represented institutional founders
+                  in a high-leverage minority shareholder exit and subsequent
+                  equity restructuring within a regional agricultural supply
+                  chain network.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Drafted customized
+                  share purchase agreements (SPAs) and corporate governance
+                  policies to safeguard remaining equity values.
+                </p>
+              </div>
+            </div>
+            <!-- Case 4 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Private Equity Advisory for Tech Growth Fund
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$28M Series B</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Retained by an international PE fund
+                  to execute comprehensive legal due diligence and investment
+                  compliance mapping for a major round in an enterprise software
+                  provider.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Formulated
+                  investor protection clauses, anti-dilution structures, and
+                  managed flawless closing protocols.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Infrastructure & Energy (3 CaseMatters) -->
+        <div
+          class="tab-pane fade"
+          id="panel-infra"
+          role="tabpanel"
+          aria-labelledby="infra-tab"
+        >
+          <div class="row g-4">
+            <!-- Case 1 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Cross-Border Independent Power Producer (IPP) Development
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$140M USD Venture</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Advised an international consortium
+                  on the project financing, land tenure architecture, and
+                  regulatory structuring of a 50MW solar energy layout in the
+                  Rift Valley.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Successfully
+                  negotiated the Power Purchase Agreement (PPA) with state
+                  utilities under the revised PPP framework, effectively
+                  securing necessary sovereign guarantees.
+                </p>
+              </div>
+            </div>
+            <!-- Case 2 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Sovereign Highway & Transport Infrastructure PPP
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$310M USD Project</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Appointed as local legal advisors to
+                  a global engineering contractor executing a major toll highway
+                  network via a Public-Private Partnership model.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Handled complex
+                  local content regulatory compliance, environmental license
+                  clearances, and structured the project concession agreements.
+                </p>
+              </div>
+            </div>
+            <!-- Case 3 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Geothermal Drilling Joint Venture
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$85M Advisory Portfolio</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Structured a strategic joint venture
+                  between a foreign energy exploration entity and a local
+                  statutory corporation for commercial steam field exploration.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Mitigated dual-tax
+                  risks, established local operational asset ring-fencing, and
+                  cleared mineral rights licensing obstacles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Banking & FinTech (3 Matters) -->
+        <div
+          class="tab-pane fade"
+          id="panel-banking"
+          role="tabpanel"
+          aria-labelledby="banking-tab"
+        >
+          <div class="row g-4">
+            <!-- Case 1 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Regulatory Clearance for a Pan-African Payment Rail
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >Licensing & AML Framework</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Retained by a multi-jurisdictional
+                  digital remittance provider to navigate complex anti-money
+                  laundering (AML) demands and digital channel licensing across
+                  East Africa.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Secured full
+                  compliance clearance from the Central Bank of Kenya (CBK) and
+                  regional regulators within an accelerated 90-day sandbox
+                  timeline.
+                </p>
+              </div>
+            </div>
+            <!-- Case 2 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Tier-2 Commercial Bank Syndicated Loan Restructuring
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$50M Asset Realignment</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Acted for a banking consortium in
+                  restructuring a non-performing syndicated credit line extended
+                  to a regional real estate developer.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Formulated
+                  cross-collateralization agreements and debt-to-equity
+                  conversion documentation, successfully avoiding insolvency
+                  proceedings.
+                </p>
+              </div>
+            </div>
+            <!-- Case 3 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Digital Asset Exchange Regulatory Sanction Shield
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >FinTech Compliance</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Provided critical defense and
+                  strategic risk consulting to an emerging Web3 payment
+                  processor encountering localized regulatory scrutiny regarding
+                  capital controls.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Engineered a
+                  completely verified operational firewall separating
+                  cross-border settlements, resulting in a safe conditional
+                  operating license clearance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Dispute Resolution (3 Case Matters) -->
+        <div
+          class="tab-pane fade"
+          id="panel-dispute"
+          role="tabpanel"
+          aria-labelledby="dispute-tab"
+        >
+          <div class="row g-4">
+            <!-- Case 1 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Tax Tribunal Defense for Manufacturing Conglomerate
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$18M Dispute Assessment</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Defended a multinational consumer
+                  goods manufacturer against a punitive $18M transfer pricing
+                  assessment issued by regional revenue authorities.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Obtained a total
+                  vacate order of the assessment at the Tax Appeals Tribunal by
+                  cleanly proving arm's-length compliance metrics.
+                </p>
+              </div>
+            </div>
+            <!-- Case 2 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Arbitration on Telecommunications Infrastructure Breach
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >$35M International Arbitration</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Represented an international carrier
+                  network operator in a high-stakes contract dispute over fiber
+                  optic infrastructure rollouts across East Africa.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Secured a
+                  favorable arbitral award covering direct losses and liquidated
+                  damages under UNCITRAL rules.
+                </p>
+              </div>
+            </div>
+            <!-- Case 3 -->
+            <div class="col-md-12">
+              <div class="case-study-card bg-white p-4 rounded shadow-sm">
+                <div
+                  class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3"
+                >
+                  <h4 class="fw-bold text-dark mb-0">
+                    Intellectual Property & Trademark Enforcement Infringement
+                  </h4>
+                  <span
+                    class="badge bg-light text-dark border border-warning fw-semibold px-3 py-2"
+                    >High-Stakes Injunction</span
+                  >
+                </div>
+                <p class="text-secondary mb-3">
+                  <strong>Context:</strong> Launched emergency injunctive
+                  proceedings on behalf of a major pharmaceutical distributor
+                  encountering sophisticated brand piracy across regional border
+                  control checkposts.
+                </p>
+                <p class="text-secondary mb-0">
+                  <strong class="text-dark">Outcome:</strong> Obtained sweeping
+                  Anton Piller (search and seizure) orders, completely locking
+                  down counterfeit import points and protecting market
+                  capitalization.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3 mt-auto">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
-            <h5 class="text-uppercase fw-bold mb-3 tracking-wider">
+            <h5 class="text-uppercase fw-bold mb-3 tracking-wider text-white">
               Choge Advocates
             </h5>
-            <p class="small text-muted-custom">
+            <p class="small text-muted">
               Premier commercial and corporate law firm providing strategic
               legal counsel, rigorous compliance engineering, and asset
               protection for institutional shareholders across East Africa.
             </p>
-            <p class="small mb-0">Nairobi, Kenya</p>
+            <p class="small mb-0 text-muted">Nairobi, Kenya</p>
           </div>
 
           <div class="col-lg-4 col-md-6">
-            <h5 class="text-uppercase fw-bold mb-3 tracking-wider">
+            <h5 class="text-uppercase fw-bold mb-3 tracking-wider text-white">
               Quick Links
             </h5>
             <div class="row">
               <div class="col-6">
                 <ul class="list-unstyled footer-links small">
                   <li class="mb-2">
-                    <a href="index.html" class="text-decoration-none">Home</a>
+                    <a href="index.html" class="text-decoration-none text-muted"
+                      >Home</a
+                    >
                   </li>
                   <li class="mb-2">
-                    <a href="about.html" class="text-decoration-none"
+                    <a href="about.html" class="text-decoration-none text-muted"
                       >About Us</a
                     >
                   </li>
                   <li class="mb-2">
-                    <a href="team.html" class="text-decoration-none"
+                    <a href="team.html" class="text-decoration-none text-muted"
                       >Our Advocates</a
                     >
                   </li>
                   <li class="mb-2">
-                    <a href="services.html" class="text-decoration-none"
+                    <a
+                      href="services.html"
+                      class="text-decoration-none text-muted"
                       >Practice Areas</a
                     >
                   </li>
@@ -193,22 +679,26 @@
               <div class="col-6">
                 <ul class="list-unstyled footer-links small">
                   <li class="mb-2">
-                    <a href="blog.html" class="text-decoration-none"
+                    <a href="blog.html" class="text-decoration-none text-muted"
                       >Legal Insights</a
                     >
                   </li>
                   <li class="mb-2">
-                    <a href="cases.html" class="text-decoration-none"
+                    <a href="cases.html" class="text-decoration-none text-muted"
                       >Notable Matters</a
                     >
                   </li>
                   <li class="mb-2">
-                    <a href="careers.html" class="text-decoration-none"
+                    <a
+                      href="careers.html"
+                      class="text-decoration-none text-muted"
                       >Careers</a
                     >
                   </li>
                   <li class="mb-2">
-                    <a href="contact.html" class="text-decoration-none"
+                    <a
+                      href="contact.html"
+                      class="text-decoration-none text-muted"
                       >Consultation</a
                     >
                   </li>
@@ -218,43 +708,36 @@
           </div>
 
           <div class="col-lg-4 col-md-12">
-            <h5 class="text-uppercase fw-bold mb-3 tracking-wider">
+            <h5 class="text-uppercase fw-bold mb-3 tracking-wider text-white">
               Contact Channels
             </h5>
-            <ul class="list-unstyled small text-muted-custom">
-              <li class="mb-2 d-flex align-items-center">
-                <span class="me-2">📍</span> Upper Hill, Nairobi, Kenya
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <span class="me-2">✉️</span> info@chogeadvocates.co.ke
-              </li>
-              <li class="mb-2 d-flex align-items-center">
-                <span class="me-2">📞</span> +254 (0) 700 000 000
-              </li>
-              <li class="mb-0 d-flex align-items-center">
-                <span class="me-2">🕒</span> Mon - Fri: 8:00 AM - 5:00 PM
-              </li>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2">📍 Upper Hill, Nairobi, Kenya</li>
+              <li class="mb-2">✉️ info@chogeadvocates.co.ke</li>
+              <li class="mb-2">📞 +254 (0) 700 000 000</li>
+              <li class="mb-0">🕒 Mon - Fri: 8:00 AM - 5:00 PM</li>
             </ul>
           </div>
         </div>
 
-        <hr class="my-4 border-secondary-custom" />
+        <hr class="my-4 border-secondary" />
 
         <div class="row align-items-center">
           <div class="col-md-12 text-center">
-            <p class="small mb-0 text-muted-custom">
+            <p class="small mb-0 text-muted">
               &copy; 2026 Choge Advocates. All Rights Reserved.
             </p>
           </div>
         </div>
       </div>
     </footer>
+    <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/cases-chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/cases-chart.js"></script>
   </body>
 </html>
