@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Condition B: card match the selected practice field row?
       const matchField = activeField === "all" || cardField === activeField;
 
-      // If BOTH, display the card. Otherwise, hide it.
+      // If BOTH, the display the card. Otherwise, hide it.
       if (matchRole && matchField) {
         card.style.display = "block";
       } else {

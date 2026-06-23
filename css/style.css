@@ -167,3 +167,22 @@ footer h5 {
 .about-hero .text-muted {
   color: rgba(251, 249, 244, 0.75) !important;
 }
+
+/* smooth styling Accordion */
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa !important;
+  color: #198754 !important;
+  box-shadow: none !important; /* Removes focus glow ring */
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  transition: transform 0.2s ease-in-out;
+}
