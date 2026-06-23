@@ -70,6 +70,84 @@
         </div>
       </div>
     </nav>
+
+    <section class="container my-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="metric-card bg-white p-4 rounded shadow-sm">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div
+                    class="metric-icon-box bg-light p-2 rounded text-primary"
+                  >
+                    <i class="fa-solid fa-briefcase fa-xl"></i>
+                  </div>
+                  <h6 class="text-muted mb-0">Managed Portfolio</h6>
+                </div>
+                <h3 class="fw-bold text-dark">$1.2B+ USD</h3>
+                <p class="text-secondary small mb-0">
+                  Total transaction value in cross-border M&A and sovereign
+                  project finance.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="metric-card bg-white p-4 rounded shadow-sm">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div
+                    class="metric-icon-box bg-light p-2 rounded text-success"
+                  >
+                    <i class="fa-solid fa-scale-balanced fa-xl"></i>
+                  </div>
+                  <h6 class="text-muted mb-0">Dispute Resolutions</h6>
+                </div>
+                <h3 class="fw-bold text-dark">45+ Matters</h3>
+                <p class="text-secondary small mb-0">
+                  High-stakes corporate cases successfully cleared before
+                  regulatory tribunals.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="metric-card bg-white p-4 rounded shadow-sm">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div
+                    class="metric-icon-box bg-light p-2 rounded text-warning"
+                  >
+                    <i class="fa-solid fa-earth-africa fa-xl"></i>
+                  </div>
+                  <h6 class="text-muted mb-0">Regional Footprint</h6>
+                </div>
+                <h5 class="fw-bold text-dark mb-1">
+                  East African Community Coverage
+                </h5>
+                <p class="text-secondary small mb-0">
+                  Active advisory counsel and transactional structures across
+                  Kenya, Uganda, Tanzania, and Rwanda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="chart-wrapper-card bg-white p-4 rounded shadow-sm border">
+            <h6
+              class="fw-bold text-center mb-3 text-secondary tracking-wide text-uppercase small"
+            >
+              Transaction Value Allocation
+            </h6>
+            <div class="matters-chart-container">
+              <canvas id="mattersDoughnutChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="text-light pt-5 pb-3 mt-auto">
       <div class="container">
         <div class="row g-4">
@@ -176,5 +254,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/cases-chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>

@@ -195,3 +195,36 @@ footer h5 {
 .dim-group .db-trigger-link:hover {
   opacity: 1 !important;
 }
+
+/* Notable Matters (cases.html) Specific Styling */
+.metric-card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #1a365d;
+  transition:
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.metric-icon-box {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-wrapper-card {
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.matters-chart-container {
+  position: relative;
+  margin: auto;
+  height: 260px; /* Locks height to look compact next to metrics cards */
+  width: 100%;
+}
