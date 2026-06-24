@@ -289,3 +289,66 @@ body {
   position: relative;
   border: 3px solid #fff;
 }
+
+.max-width-md {
+  max-width: 700px;
+}
+
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.08em;
+}
+
+.font-serif {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+footer {
+  background-color: #1a252f;
+}
+
+.text-muted-custom {
+  color: #adb5bd;
+}
+
+.border-secondary-custom {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer-links a {
+  color: #adb5bd;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .timeline-container .row {
+    position: relative;
+  }
+  /* horizontal connecting line behind the timeline badges on desktop screens */
+  .timeline-container .row::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 12%;
+    width: 76%;
+    height: 2px;
+    background-color: #dee2e6;
+    z-index: 0;
+  }
+  .timeline-badge {
+    position: relative;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
