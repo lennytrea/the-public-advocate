@@ -247,3 +247,45 @@ footer h5 {
   background-color: #1a365d !important;
   color: #ffffff !important;
 }
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* Custom Timeline Styling for the Connecting Line in careers.html */
+.timeline-container {
+  position: relative;
+}
+/* The main connecting line */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 31px;
+  width: 3px;
+  background-color: #e9ecef; /* Gray Line */
+}
+@media (min-width: 992px) {
+  /* Flip line horizontally on large screens */
+  .timeline-container::before {
+    top: 31px;
+    left: 40px;
+    right: 40px;
+    width: auto;
+    height: 3px;
+  }
+}
+.timeline-badge {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  border: 3px solid #fff;
+}
