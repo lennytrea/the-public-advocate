@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const targetRole = urlParams.get("role");
   if (targetRole) {
-    // Defines your mapping for accordion items and modals
+    // Defines mapping for accordion items and modals
     const routes = {
       fintech: { accordion: "collapseOne", modal: "applyFintechModal" },
       infrastructure: {

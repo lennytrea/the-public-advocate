@@ -1,5 +1,5 @@
 /**
- * Initializer for Choge Advocates Transaction Allocation Graph bcases.html
+ * Initializer for Choge Advocates Transaction Allocation Graph cases.html
  */
 document.addEventListener("DOMContentLoaded", function () {
   const chartCanvas = document.getElementById("mattersDoughnutChart");
@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
           {
             label: "Portfolio Allocation ($ Millions)",
             data: [450, 400, 200, 150],
-            //colours for chart segments
+            // 🌟 Updated to match your actual brand style identities!
             backgroundColor: [
-              "#1a365d", // Corporate Deep Blue
-              "#d4af37", // Gold Accent
-              "#2c3e50", // Slate Grey
-              "#a0aec0", // Muted Silver
+              "#0a192f", // Brand Navy
+              "#13331c", // Brand Dark Forest Green
+              "#bfa15f", // A muted Gold/Cream Accent for chart contrast
+              "#cbd5e1", // Light Slate Silver
             ],
             borderWidth: 2,
             borderColor: "#ffffff",
@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
               font: {
                 size: 11,
                 weight: "500",
+                family: "'Plus Jakarta Sans', 'Segoe UI', sans-serif",
               },
             },
           },

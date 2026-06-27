@@ -1,7 +1,7 @@
 document
   .getElementById("insightSubmissionForm")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevents page from jumping or reloading
+    event.preventDefault(); // /**/Prevents page from jumping or reloading
 
     const emailVal = document.getElementById("contributorEmail").value;
     const alertPlaceholder = document.getElementById("formStatusPlaceholder");

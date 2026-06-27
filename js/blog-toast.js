@@ -4,7 +4,7 @@ document.querySelectorAll(".db-trigger-link").forEach((button) => {
     // Pull the custom data attribute out of the targeted element
     const articleTitle = this.getAttribute("data-article");
 
-    // Inject the data attribute into our Toast warning text
+    // Inject the data attribute into the Toast warning text
     document.getElementById("targetArticleName").textContent =
       `"${articleTitle}"`;
 
